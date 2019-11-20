@@ -1,0 +1,78 @@
+
+header{
+    display: flex;
+}
+
+.header__logo{
+    flex: 1;
+}
+
+.header__logo span{
+    display: inline-block;
+    line-height: 40px;
+}
+
+.header__menu{
+    flex: 1;
+}
+
+
+.bg{
+    height: 100vh;
+    width: 100%;
+}
+
+img{
+    width: 100%;
+    opacity: .5;
+}
+
+.motto__left, .motto__content, .motto__right{
+    position: absolute;
+    font-size: 6rem;
+
+    color: black;
+}
+
+.motto__left{
+    top: 20vh;
+}
+
+.motto__content{
+    top: 30vh;
+    left: 10vw;
+    width: 75vw;
+    /* display: flex; */
+}
+
+.motto__content__top{
+    left: 5vw;
+}
+.motto__content__bottom{
+    left: 10vw;
+}
+
+.motto__right{
+    top: 60vh;
+    left: 90vw;
+}
+
+
+
+
+ol, ul{
+    list-style: none;
+}
+
+.pd_r_20{
+    padding-right: 20px;
+}
+
+.pd_l_20{
+    padding-left: 20px;
+}
+
+.justify-content-right{
+    justify-content: right;
+}
+
