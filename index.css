@@ -1,21 +1,22 @@
 
 @import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
 
+@import './portfolio.css';
 
 *{
     font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
 }
 
-.firstScreen{
+#firstScreen{
     
     height: 100vh;
     width: 100%;
 
     position: relative;
 }
-.firstScreen::after{
+#firstScreen::after{
     content: "";
-    background: url('./gray-paved-road-between-trees-3077379.jpg');
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/gray-paved-road-between-trees-3077379.jpg');
     background-size: 100% 100%;
     opacity: .5;
 
@@ -94,71 +95,17 @@ header{
 }
 
 
-.portfolio__wrapper, .contact{
+
+#contact{
     position: relative;
     height: 100vh;
-}
-
-.portfolio__title{
-    display: inline-block;
-    width: 100%;
-    text-align: center;
-
-    font-size: 4rem;
-    letter-spacing: .1em;
-}
-
-.portfolio, .contact_content{
-    margin: 10vh 9vw 0;
-    height: 65vh;
-    background-color: #daf5ff;
-    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
-}
-
-/* according to No.1 maket share screen size */
-.portfolio__content{
-    position: relative;
-    display: inline-block;
-    background-color: aliceblue;
-    width: 45%;
-    height: 40%;
-    margin: 2.5% 2%;
-}
-
-.portfolio__content1{
-    background: url('./螢幕快照\ 2019-11-21\ 下午9.59.21.png');
-    background-size: 100% 100%;
-
-}
-.portfolio__content2{
-    background: url('./KKTIXextension捷圖.jpg');
-    background-size: 100% 100%;
-
-}
-.portfolio__content3{
-    background: url('.');
-    background-size: 100% 100%;
-
-}
-.portfolio__content4{
-    background: url('.');
-    background-size: 100% 100%;
-
-}
-
-.portfolio__right, .contact__right{
-    top: 75vh;
-    left: 90vw;
-}
-
-.contact{
     height: 100vh;
     width: 100%;
     position: relative;
     background-color: lightcyan;
 }
 
-.contact h2{
+#contact h2{
     font-family: "Titillium Web", "Adobe Blank";
     font-weight: 400;
     font-style: normal;
@@ -169,7 +116,15 @@ header{
     padding-top: 40px;
 }
 
+.contact__right{
+    top: 75vh;
+    left: 90vw;
+}
+
 .contact_content{
+    margin: 10vh 9vw 0;
+    background-color: #daf5ff;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
     height: 55vh;
     position: relative;
 }

@@ -13,17 +13,17 @@
 <body>
 
     
-    <section class="firstScreen">
+    <section id="firstScreen">
         <header class="masthead mb-auto pd_r_20 pd_l_20 " style="background-color: aquamarine">
             <div class="header__logo">
                 <h1 >Willy's blog </h1>
             </div>
             <nav class="nav nav-masthead justify-content-right header__menu">
                 <!-- <ul> -->
-                    <a class="nav-link">Home    </a>
+                    <a href="#firstScreen" class="nav-link" >Home    </a>
                     <!-- <a class="nav-link">Skill   </a> -->
-                    <a class="nav-link">Portfolio</a>
-                    <a class="nav-link">Contact </a>
+                    <a href="#portfolio__wrapper" class="nav-link">Portfolio</a>
+                    <a href="#contact" class="nav-link">Contact </a>
                     <!-- <li></li> -->
                 <!-- </ul> -->
             </nav>
@@ -52,8 +52,8 @@
         </div>
     </section>
 
-    <section class="portfolio__wrapper">
-        <h2 class="portfolio__title">Portfolio</h2>
+    <section id="portfolio__wrapper">
+        <h2 class="portfolio__title">PORTFOLIO</h2>
         
         <div class="motto">
             <span class="portfolio__left">
@@ -65,18 +65,17 @@
         </div>
 
         <div class="portfolio">
-            <a href="http://www.flycan.com/article/css/reset-css-562.html" target="_blank">
+            <a href="https://www.bonny-badminton.tw/" target="_new">
                 <div class="portfolio__content portfolio__content1">
-                
                 </div>
             </a>
-            <a href="#" target="_blank">
+            <a href="https://chrome.google.com/webstore/detail/kktix%E6%90%B6%E7%A5%A8%E5%BF%AB%E6%89%8B/kcegpcknofglohmodfepgppioffeihba?hl=zh-TW&authuser=2" target="_new">
                 <div class="portfolio__content portfolio__content2"></div>
             </a>
-            <a href="" target="_blank">
+            <a href="" target="_new">
                 <div class="portfolio__content portfolio__content3"></div>
             </a>
-            <a href="" target="_blank">
+            <a href="" target="_new">
                 <div class="portfolio__content portfolio__content4"></div>
             </a>
         </div>
@@ -84,7 +83,7 @@
         
     </section>
 
-    <section class="contact">
+    <section id="contact" class="contact">
         <h2> Contact </h2>
         <div class="motto">
             <span class="contact__left">
@@ -96,9 +95,15 @@
         </div>
         <div class="contact_content">
             <div class="contact_content_inner">
-                <img src="https://img.icons8.com/color/240/000000/line-me.png">
-                <img src="https://img.icons8.com/color/240/000000/gmail.png">
-                <img src="https://img.icons8.com/material-outlined/240/000000/github.png">
+                <a href="https://line.me/zh-hant/" target="_new">
+                    <img src="https://img.icons8.com/color/240/000000/line-me.png">
+                </a>
+                <a href="MAILTO:ai791016ai791016@gmail.com?subject=Hello! Willy!">
+                    <img src="https://img.icons8.com/color/240/000000/gmail.png">
+                </a>
+                <a href="https://github.com/" target="_new">
+                    <img src="https://img.icons8.com/material-outlined/240/000000/github.png">
+                </a>
             </div>
         </div>
     </section>

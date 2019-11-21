@@ -1,0 +1,59 @@
+
+
+
+#portfolio__wrapper{
+    position: relative;
+    height: 100vh;
+}
+
+.portfolio__title{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+
+    font-size: 4rem;
+    letter-spacing: .1em;
+}
+
+.portfolio{
+    margin: 10vh 9vw 0;
+    height: 65vh;
+    background-color: #daf5ff;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+}
+
+/* according to No.1 maket share screen size */
+.portfolio__content{
+    position: relative;
+    display: inline-block;
+    background-color: aliceblue;
+    width: 45%;
+    height: 40%;
+    margin: 2.5% 2%;
+}
+
+.portfolio__content1{
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/bonnyBadmintonScreenshot.png');
+    background-size: 100% 100%;
+
+}
+.portfolio__content2{
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/KKTIXextensionScreenshot.jpg');
+    background-size: 100% 100%;
+
+}
+.portfolio__content3{
+    background: url('.');
+    background-size: 100% 100%;
+
+}
+.portfolio__content4{
+    background: url('.');
+    background-size: 100% 100%;
+
+}
+
+.portfolio__right{
+    top: 75vh;
+    left: 90vw;
+}
