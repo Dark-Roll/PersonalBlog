@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web&display=swap');
+
+
+*{
+    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+}
 
 .firstScreen{
     
@@ -23,6 +29,10 @@
 
 header{
     display: flex;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    opacity: .8;
 }
 
 .header__logo{
@@ -39,7 +49,7 @@ header{
     flex: 1;
 }
 
-.motto__left, .motto__content, .motto__right{
+.motto__left, .motto__content, .motto__right, .portfolio__left, .portfolio__right, .contact__left, .contact__right{
     position: absolute;
     font-size: 6rem;
 
@@ -84,10 +94,9 @@ header{
 }
 
 
-.portfolio__wrapper{
+.portfolio__wrapper, .contact{
     position: relative;
     height: 100vh;
-    background: gray;
 }
 
 .portfolio__title{
@@ -99,17 +108,81 @@ header{
     letter-spacing: .1em;
 }
 
-.portfolio{
-    margin: 20vh 9vw 0;
+.portfolio, .contact_content{
+    margin: 10vh 9vw 0;
+    height: 65vh;
+    background-color: #daf5ff;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 }
-.portfolio__content{
-    width: 320px;
-    /* // 20rem; */
-    height: 180px;
-    background-color: aquamarine;
 
-    border: 1px red solid;
+/* according to No.1 maket share screen size */
+.portfolio__content{
+    position: relative;
+    display: inline-block;
+    background-color: aliceblue;
+    width: 45%;
+    height: 40%;
+    margin: 2.5% 2%;
 }
+
+.portfolio__content1{
+    background: url('./螢幕快照\ 2019-11-21\ 下午9.59.21.png');
+    background-size: 100% 100%;
+
+}
+.portfolio__content2{
+    background: url('./KKTIXextension捷圖.jpg');
+    background-size: 100% 100%;
+
+}
+.portfolio__content3{
+    background: url('.');
+    background-size: 100% 100%;
+
+}
+.portfolio__content4{
+    background: url('.');
+    background-size: 100% 100%;
+
+}
+
+.portfolio__right, .contact__right{
+    top: 75vh;
+    left: 90vw;
+}
+
+.contact{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    background-color: lightcyan;
+}
+
+.contact h2{
+    font-family: "Titillium Web", "Adobe Blank";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 6rem;
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-top: 40px;
+}
+
+.contact_content{
+    height: 55vh;
+    position: relative;
+}
+/* TODO: optimize the style */
+.contact_content_inner{
+    height: 240px;
+    position: absolute;
+    top: 25%;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
 
 
 ol, ul{
