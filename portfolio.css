@@ -5,6 +5,12 @@
     position: relative;
     height: 100vh;
 }
+@media (max-width: 767px) {
+    #portfolio__wrapper{
+        position: relative;
+        height: 150vh;
+    }
+}
 
 .portfolio__title{
     display: inline-block;
@@ -14,12 +20,30 @@
     font-size: 4rem;
     letter-spacing: .1em;
 }
+@media (max-width: 480px) {
+    .portfolio__title{
+        display: inline-block;
+        width: 100%;
+        text-align: center;
+    
+        font-size: 10vw;
+        letter-spacing: .1em;
+    }
+}
 
 .portfolio{
     margin: 10vh 9vw 0;
     height: 65vh;
     background-color: #daf5ff;
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+}
+@media (max-width: 767px) {
+    .portfolio{
+        margin: 10vh 9vw 0;
+        height: 65vh;
+        background-color: white;
+        box-shadow: none;
+    }
 }
 
 /* according to No.1 maket share screen size (16:9) */
@@ -30,6 +54,12 @@
     width: 45%;
     height: 40%;
     margin: 2.5% 2%;
+}
+@media (max-width: 767px) {
+    .portfolio__content{
+        width: 80vw;
+        border: 1px inset gray;
+    }
 }
 
 .portfolio__content1{
@@ -139,4 +169,13 @@
 .portfolio__right{
     top: 75vh;
     left: 90vw;
+}
+
+@media (max-width: 767px) {
+    .portfolio__left{
+        display: none;
+    }
+    .portfolio__right{
+        display: none;
+    }
 }

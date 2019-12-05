@@ -11,23 +11,50 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
+    <script>
+        const toggleShowHamburger = ()=> {
+            let hamburgerClassArr = document.querySelector('.hamburger').classList
+            let menu = document.querySelector('.menu')
+            if (hamburgerClassArr.length > 1){
+                document.querySelector('.hamburger').classList.remove('active')
+                menu.style.display = 'none'
+            } else{
+                document.querySelector('.hamburger').classList.add('active')
+                menu.style.display = 'block'
+            }
 
+        }
+        
+        const hideMenu = () =>{
+            let menu = document.querySelector('.menu')
+            menu.style.display = 'none'
+            let hamburgerClassArr = document.querySelector('.hamburger').classList
+            document.querySelector('.hamburger').classList.remove('active')
+        }
+    </script>
     
     <section id="firstScreen">
-        <header class="masthead mb-auto pd_r_20 pd_l_20 " style="background-color: aquamarine">
+        <header class="masthead mb-auto pd_r_20 pd_l_20 " >
             <div class="header__logo">
                 <h1 >Willy's blog </h1>
             </div>
+            <!-- TODO: skill -->
             <nav class="nav nav-masthead justify-content-right header__menu">
-                <!-- <ul> -->
-                    <a href="#firstScreen" class="nav-link" >Home    </a>
-                    <!-- <a class="nav-link">Skill   </a> -->
-                    <a href="#portfolio__wrapper" class="nav-link">Portfolio</a>
-                    <a href="#contact" class="nav-link">Contact </a>
-                    <!-- <li></li> -->
-                <!-- </ul> -->
+                <a href="#firstScreen" class="nav-link" >Home    </a>
+                <a href="#portfolio__wrapper" class="nav-link">Portfolio</a>
+                <a href="#contact" class="nav-link">Contact </a>
+            </nav>
+            <nav class="hamburger" onclick="toggleShowHamburger()">
+                <span class="line line-1"></span>
+                <span class="line line-2"></span>
+                <span class="line line-3"></span>
             </nav>
         </header>
+        <aside class="menu">
+            <a class="menuLink nav-link" onclick='hideMenu()' href="#firstScreen"  >Home    </a>
+            <a class="menuLink nav-link" onclick='hideMenu()' href="#portfolio__wrapper" >Portfolio</a>
+            <a class="menuLink nav-link" onclick='hideMenu()' href="#contact" >Contact </a>
+        </aside>
         
         <div class="firstScreen__content">
             <div class="motto">

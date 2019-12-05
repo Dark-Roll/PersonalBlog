@@ -34,6 +34,8 @@ header{
     width: 100%;
     z-index: 2;
     opacity: .8;
+
+    background-color: #34495e;
 }
 
 .header__logo{
@@ -44,15 +46,87 @@ header{
     display: inline-block;
     line-height: 40px;
     font-size: 1.2rem;
+
+    color: white;
 }
 
 .header__menu{
     flex: 1;
 }
 
+.hamburger{
+    width: 30px;
+    height: 22px;
+    position: relative;
+    display: none;
+    padding: 0;
+    margin-top: 14px;
+}
+.hamburger .line{
+    display: block;
+    background: #ecf0f1;
+    width: 30px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    border-radius: 4px;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s; 
+}
+.hamburger .line-1{
+    top: calc( 0% - 4px );
+}
+.hamburger .line-2{
+    top: calc( 50% - 4px );
+}
+.hamburger .line-3{
+    top: calc( 100% - 4px );
+}
+
+.active .line-1{
+    transform: translateY(10.5px) translateX(0) rotate(45deg);
+    -webkit-transform: translateY(10.5px) translateX(0) rotate(45deg);
+    -moz-transform: translateY(10.5px) translateX(0) rotate(45deg);
+}
+.active .line-2{
+    opacity: 0;
+}
+.active .line-3{
+    transform: translateY(-11.5px) translateX(0) rotate(-45deg);
+    -webkit-transform: translateY(-11.5px) translateX(0) rotate(-45deg);
+    -moz-transform: translateY(-11.5px) translateX(0) rotate(-45deg);
+}
+
+
+.nav a{
+    color: white;
+}
+@media (max-width: 767px){
+    .nav{
+        display: none;
+    }
+    .hamburger{
+        display: block;
+    }
+}
+
+aside{
+    display: none;
+    position: fixed;
+    top: 48px;
+    right: 0;
+    width: 350px;
+    background-color: white;
+    z-index: 5;
+}
+aside a{
+    /* color: white; */
+}
+
 .motto__left, .motto__content, .motto__right, .portfolio__left, .portfolio__right, .contact__left, .contact__right{
     position: absolute;
-    font-size: 6rem;
+    font-size: 8vw;
 
     color: black;
 }
@@ -116,9 +190,29 @@ header{
     padding-top: 40px;
 }
 
+@media (max-width: 480px) {
+    #contact h2{
+        font-family: "Titillium Web", "Adobe Blank";
+        font-weight: 400;
+        font-style: normal;
+        font-size: 25vw;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding-top: 40px;
+    }
+}
+
+
 .contact__right{
     top: 75vh;
     left: 90vw;
+}
+@media (max-width: 979px){
+    .contact__right{
+        top: 90vh;
+        /* bottom: 5vh; */
+    }
 }
 
 .contact_content{
@@ -127,6 +221,11 @@ header{
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
     height: 55vh;
     position: relative;
+}
+@media (max-width: 767px){
+    .contact_content{
+        height: 60vh;
+    }
 }
 /* TODO: optimize the style */
 .contact_content_inner{
@@ -137,7 +236,33 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
+@media (max-width: 480px){
+    .contact_content_inner{
+        height: 240px;
+        position: absolute;
+        top: 0%;
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+}
 
+@media (max-width: 979px){
+    .contact_content_inner img{
+        width: 25vw;
+    }
+}
+@media (max-width: 767px){
+    .contact_content_inner img{
+        width: 25vw;
+    }
+}
+@media (max-width: 480px){
+    .contact_content_inner img{
+        width: 40vw;
+    }
+}
 
 
 ol, ul{
@@ -158,19 +283,21 @@ ol, ul{
 
 @keyframes down{
     0%{
-        top: 85vh;
+        top: 82vh;
     }
     25%{
-        top: 88vh;
+        top: 85vh;
+        /* display: none; why not work? */
+        opacity: 0;
     }
     50%{
-        top: 85vh;
+        top: 82vh;
     }
     75%{
-        top: 88vh;
+        top: 85vh;
     }
     100%{
-        top: 85vh;
+        top: 82vh;
     }
 }
 
