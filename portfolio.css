@@ -8,7 +8,8 @@
 @media (max-width: 767px) {
     #portfolio__wrapper{
         position: relative;
-        height: 150vh;
+        height: 1860px;
+        
     }
 }
 
@@ -19,6 +20,7 @@
 
     font-size: 4rem;
     letter-spacing: .1em;
+    margin: 48px 0 0 0;
 }
 @media (max-width: 480px) {
     .portfolio__title{
@@ -45,7 +47,22 @@
         box-shadow: none;
     }
 }
+@media (max-width: 479px) {
+    .portfolio{
+        margin: 3vh 9vw 0;
+        height: 65vh;
+        background-color: white;
+        box-shadow: none;
+    }
+}
 
+
+.portfolio__intro{
+    display: none;
+}
+.portfolio__intro__title{
+    color: blueviolet;
+}
 /* according to No.1 maket share screen size (16:9) */
 .portfolio__content{
     position: relative;
@@ -60,7 +77,11 @@
         width: 80vw;
         border: 1px inset gray;
     }
+    .portfolio__intro{
+        display: inline;
+    }
 }
+
 
 .portfolio__content1{
     background: url('https://willy-personal.s3.amazonaws.com/personalBlog/bonnyBadmintonScreenshot.png');

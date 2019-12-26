@@ -119,6 +119,7 @@ aside{
     width: 350px;
     background-color: white;
     z-index: 5;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 }
 aside a{
     /* color: white; */
@@ -235,6 +236,16 @@ aside a{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+}
+
+.contact_content_inner span{
+    cursor: pointer;
+}
+
+@media (min-width: 980px){
+    .contact_content_inner img{
+        min-width: 240px;
+    }
 }
 @media (max-width: 480px){
     .contact_content_inner{
