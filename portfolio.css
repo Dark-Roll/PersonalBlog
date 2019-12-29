@@ -8,8 +8,7 @@
 @media (max-width: 767px) {
     #portfolio__wrapper{
         position: relative;
-        height: 1860px;
-        
+        height: 1560px;            
     }
 }
 
@@ -79,6 +78,9 @@
     }
     .portfolio__intro{
         display: inline;
+        
+        letter-spacing: 1px;
+        line-height: 24px;
     }
 }
 
