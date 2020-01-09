@@ -33,7 +33,6 @@ header{
     position: fixed;
     width: 100%;
     z-index: 2;
-    opacity: .8;
 
     background-color: #34495e;
 }
@@ -41,13 +40,19 @@ header{
 .header__logo{
     flex: 1;
 }
+.header__logo .rotate{
+    height:40px;
+    display: inline-block;
+    color: #badefc;
+    animation: rotate 2s infinite;
+}
 
 .header__logo h1{
     display: inline-block;
     line-height: 40px;
     font-size: 1.2rem;
 
-    color: white;
+    color: #badefc;
 }
 
 .header__menu{
@@ -61,10 +66,12 @@ header{
     display: none;
     padding: 0;
     margin-top: 14px;
+
+    color: #badefc;
 }
 .hamburger .line{
     display: block;
-    background: #ecf0f1;
+    background: #badefc;
     width: 30px;
     height: 4px;
     position: absolute;
@@ -116,13 +123,18 @@ aside{
     position: fixed;
     top: 48px;
     right: 0;
-    width: 350px;
-    background-color: white;
+    width: 100%;
+    background-color: #34495e;
     z-index: 5;
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 }
+aside .longLine{
+    width: 100%;
+    height: 1px;
+    background-color: gray;
+}
 aside a{
-    /* color: white; */
+    color: #badefc;
 }
 
 .motto__left, .motto__content, .motto__right, .portfolio__left, .portfolio__right, .contact__left, .contact__right{
@@ -155,6 +167,20 @@ aside a{
 .motto__right{
     top: 60vh;
     left: 90vw;
+}
+
+.firstScreen__content__button{
+    position: absolute;
+    top: 70%;
+    left: calc(50% - 75px);
+    width: 150px;
+    height: 60px;
+    background-color: #badefc;
+    color: #586ba4;
+    text-align: center;
+    line-height: 60px;
+    cursor: pointer;
+    font-weight: 600;
 }
 
 .firstScreen__content .arrow{
@@ -309,6 +335,18 @@ ol, ul{
     }
     100%{
         top: 82vh;
+    }
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(180deg);
+    }
+    100%{
+        transform: rotate(360deg);
     }
 }
 
