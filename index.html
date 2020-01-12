@@ -12,6 +12,12 @@
 </head>
 <body>
     <script>
+
+        window.onload = ()=>{
+            let loading = document.getElementsByClassName('loading')
+            loading && loading[0].classList.add('close')
+        }
+
         const toggleShowHamburger = ()=> {
             let hamburgerClassArr = document.querySelector('.hamburger').classList
             let menu = document.querySelector('.menu')
@@ -59,6 +65,12 @@
         
     </script>
     
+    <section class="loading">
+        <div class="loadingio-spinner-bean-eater-hsyziv4myg"><div class="ldio-y03if6mn0pr">
+            <div><div></div><div></div><div></div></div><div><div></div><div></div><div></div></div>
+        </div></div>
+    </section>
+
     <section id="firstScreen">
         <header class="masthead mb-auto pd_r_20 pd_l_20 " >
             <div class="header__logo">
