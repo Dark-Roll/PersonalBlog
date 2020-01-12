@@ -62,6 +62,20 @@
 
             textField.remove();
         }
+
+        const closePortfolioLightBox = (dom)=>{
+            const lightBox = document.getElementsByClassName(dom)
+            lightBox[0].classList.add('close')             
+        }
+
+        const showLightBox= (dom) =>{
+            const lightBox = document.getElementsByClassName(dom)
+            lightBox[0].classList.remove('close')
+        }
+
+        // const scrollTo = (position) => {
+
+        // }
         
     </script>
     
@@ -114,9 +128,11 @@
                     」
                 </span>
 
-                <span class="firstScreen__content__button">
+                <a class="firstScreen__content__button" href="#portfolio__wrapper"
+                >
+                <!-- onclick="function(){scrollTo('portfolio')}" -->
                     What I do
-                </span>
+                </a>
 
             </div>
 
@@ -143,35 +159,71 @@
         </div>
 
         <div class="portfolio">
-            <a href="https://www.bonny-badminton.tw/" target="_new">
-                <div class="portfolio__content portfolio__content1">
-                </div>
-            </a>
+            <div class="portfolio__content portfolio__content1"
+                onclick="showLightBox('portfolio__intro__lightbox1')"
+            >
+            </div>
             <!-- 簡單描述製作作品過 08/29 00:35
 → sojoasd: 程遇到什麼困難，且怎麼解決，這個感覺很重要，因為面試 08/29 00:35
 → sojoasd: 時比較會針對這些描述延伸做提問，你也比較有自信回答 -->
-            <span class="portfolio__intro">
-                <span class="portfolio__intro__title">
-                    致力於推廣羽球知識、揪團臨打、球拍購買等服務的網站 <br/>
+
+            <div class="portfolio__intro__lightbox1 close">
+                <div class="close__button" onclick="closePortfolioLightBox('portfolio__intro__lightbox1')">x</div>
+                <a href="https://www.bonny-badminton.tw/" target="_new">
+                    <div class="portfolio__content portfolio__content1">
+                    </div>
+                </a>
+                <div class="device__button">
+                    <button >
+                        web 
+                    </button>
+                    <button >
+                        Android
+                    </button>
+                    <button >
+                        iOS
+                    </button>
+                </div>
+                
+                <span class="portfolio__intro">
+                    <span class="portfolio__intro__title">
+                        致力於推廣羽球知識、揪團臨打、球拍購買等服務的網站 <br/>
+                    </span>
+                    使用技術：React、Redux、SCSS、SSR、FB Login、Google Map API、React Native<br/><br/>
+                    在開發 SSR 的過程中，由於是第一次接觸的技術，在前期不斷參考其他人的實作方式，卻在導入現有專案時遇上不少問題，像是搞混了 Server side 和 Client side 的 router，
+                    後來在和主管討論的過程中，慢慢理解了 SSR 的流程，也成功的在現有專案上實作出來
+                    <br/>
+                    <br/>
                 </span>
-                使用技術：React、Redux、SCSS、SSR、FB Login、Google Map API、React Native<br/><br/>
-                在開發 SSR 的過程中，由於是第一次接觸的技術，在前期不斷參考其他人的實作方式，卻在導入現有專案時遇上不少問題，像是搞混了 Server side 和 Client side 的 router，
-                後來在和主管討論的過程中，慢慢理解了 SSR 的流程，也成功的在現有專案上實作出來
-                <br/>
-                <br/>
-            </span>
-            <a href="https://chrome.google.com/webstore/detail/kktix%E6%90%B6%E7%A5%A8%E5%BF%AB%E6%89%8B/kcegpcknofglohmodfepgppioffeihba?hl=zh-TW&authuser=2" target="_new">
-                <div class="portfolio__content portfolio__content2"></div>
-            </a>
-            <span class="portfolio__intro">
-                <span class="portfolio__intro__title">
-                    加速票卷平台上購票的瀏覽器擴充功能 <br/>
+            </div>
+
+            <div class="portfolio__content portfolio__content2"
+                onclick="showLightBox('portfolio__intro__lightbox2')"
+            ></div>
+
+            <div class="portfolio__intro__lightbox2 close">
+                <div class="close__button" onclick="closePortfolioLightBox('portfolio__intro__lightbox2')">x</div>
+                <!-- <a href="https://www.bonny-badminton.tw/" target="_new"> -->
+                    <div class="portfolio__content portfolio__content2">
+                    </div>
+                <!-- </a> -->
+                <div class="device__button">
+                    <button >
+                        extension store
+                    </button>
+                </div>
+                
+                <span class="portfolio__intro">
+                    <span class="portfolio__intro__title">
+                        加速票卷平台上購票的瀏覽器擴充功能 <br/>
+                    </span>
+                    使用技術：Javascript、擴充功能上架相關的知識 <br/><br/>
+                    開發擴充功能的時候，想讓擴充功能與網頁間能夠互相通訊，因此找了 Chrome 官方的文件說明閱讀，雖說文件是出自官方，但文件就有不同種版本，加上不同版本提供的方法皆有各自的錯誤，
+                    最後在使用 stackoverflow 的解答做修改才開發完成
+                    <br/><br/>
                 </span>
-                使用技術：Javascript、擴充功能上架相關的知識 <br/><br/>
-                開發擴充功能的時候，想讓擴充功能與網頁間能夠互相通訊，因此找了 Chrome 官方的文件說明閱讀，雖說文件是出自官方，但文件就有不同種版本，加上不同版本提供的方法皆有各自的錯誤，
-                最後在使用 stackoverflow 的解答做修改才開發完成
-                <br/><br/>
-            </span>
+            </div>
+
             <!-- <a href="" target="_new">
                 <div class="portfolio__content portfolio__content3"></div>
             </a>
@@ -180,17 +232,32 @@
                 協助遠程團隊會議的網站 <br/>
                 <br/>
             </span> -->
-            <a href="http://ec2-3-87-167-172.compute-1.amazonaws.com" target="_new">
-                <div class="portfolio__content portfolio__content4"></div>
-            </a>
-            <span class="portfolio__intro">
-                <span class="portfolio__intro__title">
-                    企業內部幫助 train bot 的網站 <br/>
+
+            <div class="portfolio__content portfolio__content4"
+                onclick="showLightBox('portfolio__intro__lightbox4')"
+            ></div>
+
+            <div class="portfolio__intro__lightbox4 close">
+                <div class="close__button" onclick="closePortfolioLightBox('portfolio__intro__lightbox4')">x</div>
+                <!-- <a href="https://www.bonny-badminton.tw/" target="_new"> -->
+                    <div class="portfolio__content portfolio__content4">
+                    </div>
+                <!-- </a> -->
+                <div class="device__button">
+                    <button >
+                        website
+                    </button>
+                </div>
+                
+                <span class="portfolio__intro">
+                    <span class="portfolio__intro__title">
+                        企業內部幫助 train bot 的網站 <br/>
+                    </span>
+                    使用技術：Vue、Vuex <br/><br/>
+                    由於是與 Vue 的初相見，在一邊實作 pagination 功能的同時，一邊熟悉 Vue
+                    <br/><br/>
                 </span>
-                使用技術：Vue、Vuex <br/><br/>
-                由於是與 Vue 的初相見，在一邊實作 pagination 功能的同時，一邊熟悉 Vue
-                <br/><br/>
-            </span>
+            </div>
         </div>
 
         

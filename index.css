@@ -191,6 +191,13 @@ aside a{
     font-weight: 600;
 }
 
+.firstScreen__content__button:hover{
+    text-decoration: none;
+    background-color: initial;
+    color: white;
+    border: 2px white solid;
+}
+
 .firstScreen__content .arrow{
     position: absolute;
     top: 85vh;

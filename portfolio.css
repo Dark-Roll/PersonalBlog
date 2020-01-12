@@ -4,6 +4,7 @@
 #portfolio__wrapper{
     position: relative;
     height: 100vh;
+    background: url('./marble_background.jpg');
 }
 @media (max-width: 767px) {
     #portfolio__wrapper{
@@ -56,12 +57,51 @@
 }
 
 
-.portfolio__intro{
+.close__button{
+    font-size: 36px;
+    padding-left: 9px;
+    position: fixed;
+    width: 80%;
+
+    background-color: white;
+    
+    z-index: 10;
+    cursor: pointer;
+}
+
+/* TODO outer blur */
+.portfolio__intro__lightbox1{
+    width: 80%;
+    height: 80vh;
+
+    position: fixed ;
+    top: 10vh;
+    left: 10%; 
+    z-index: 99;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+
+}
+.portfolio__intro__lightbox1.close{
     display: none;
 }
+
+.device__button{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.portfolio__intro{
+    display: inline-block;
+    margin: 15px;
+}
+
 .portfolio__intro__title{
     color: blueviolet;
 }
+
 /* according to No.1 maket share screen size (16:9) */
 .portfolio__content{
     position: relative;
@@ -73,16 +113,72 @@
 }
 @media (max-width: 767px) {
     .portfolio__content{
-        width: 80vw;
+        width: 90%;
+        margin: 36px 5%;
         border: 1px inset gray;
     }
     .portfolio__intro{
-        display: inline;
+        /* display: inline; */
         
         letter-spacing: 1px;
         line-height: 24px;
     }
 }
+
+
+.portfolio__intro__lightbox2{
+    width: 80%;
+    height: 80vh;
+
+    position: fixed ;
+    top: 10vh;
+    left: 10%; 
+    z-index: 99;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+
+}
+.portfolio__intro__lightbox2.close{
+    display: none;
+}
+.portfolio__intro__lightbox3{
+    width: 80%;
+    height: 80vh;
+
+    position: fixed ;
+    top: 10vh;
+    left: 10%; 
+    z-index: 99;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+
+}
+.portfolio__intro__lightbox3.close{
+    display: none;
+}
+.portfolio__intro__lightbox4{
+    width: 80%;
+    height: 80vh;
+
+    position: fixed ;
+    top: 10vh;
+    left: 10%; 
+    z-index: 99;
+    background-color: white;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+
+}
+.portfolio__intro__lightbox4.close{
+    display: none;
+}
+
+
 
 
 .portfolio__content1{
