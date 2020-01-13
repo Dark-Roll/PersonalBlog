@@ -9,7 +9,7 @@
 @media (max-width: 767px) {
     #portfolio__wrapper{
         position: relative;
-        height: 1560px;            
+        height: 960px;            
     }
 }
 
@@ -61,7 +61,7 @@
     font-size: 36px;
     padding-left: 9px;
     position: fixed;
-    width: 80%;
+    width: 50%;
 
     background-color: white;
     
@@ -71,26 +71,51 @@
 
 /* TODO outer blur */
 .portfolio__intro__lightbox1{
-    width: 80%;
+    width: 50%;
     height: 80vh;
 
     position: fixed ;
     top: 10vh;
-    left: 10%; 
+    left: 25%; 
     z-index: 99;
     background-color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 
+}
+.portfolio__intro__lightbox1 .portfolio__content1{
+    width: 90%;
+    margin: 36px 5% 3%;  
 }
 .portfolio__intro__lightbox1.close{
     display: none;
 }
 
+
 .device__button{
     display: flex;
     justify-content: space-evenly;
+}
+
+.device__button a{
+    width: 70px;
+    height: 40px;
+    line-height: 40px;
+    background-color: #badefc;
+    color: #586ba4;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+.device__button.pt140 a{
+    width: 140px;
+}
+.device__button a:hover{
+    text-decoration: none;
+    background-color: initial;
+    color: #5db2f8;
+    border: 2px #5db2f8 solid;
 }
 
 .portfolio__intro{
@@ -110,6 +135,7 @@
     width: 45%;
     height: 40%;
     margin: 2.5% 2%;
+    cursor: pointer;
 }
 @media (max-width: 767px) {
     .portfolio__content{
@@ -127,15 +153,15 @@
 
 
 .portfolio__intro__lightbox2{
-    width: 80%;
+    width: 50%;
     height: 80vh;
 
     position: fixed ;
     top: 10vh;
-    left: 10%; 
+    left: 25%; 
     z-index: 99;
     background-color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 
@@ -143,16 +169,20 @@
 .portfolio__intro__lightbox2.close{
     display: none;
 }
+.portfolio__intro__lightbox2 .portfolio__content2{
+    width: 90%;
+    margin: 36px 5% 3%;  
+}
 .portfolio__intro__lightbox3{
-    width: 80%;
+    width: 50%;
     height: 80vh;
 
     position: fixed ;
     top: 10vh;
-    left: 10%; 
+    left: 25%; 
     z-index: 99;
     background-color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 
@@ -160,16 +190,20 @@
 .portfolio__intro__lightbox3.close{
     display: none;
 }
+.portfolio__intro__lightbox3 .portfolio__content3{
+    width: 90%;
+    margin: 36px 5% 3%;  
+}
 .portfolio__intro__lightbox4{
-    width: 80%;
+    width: 50%;
     height: 80vh;
 
     position: fixed ;
     top: 10vh;
-    left: 10%; 
+    left: 25%; 
     z-index: 99;
     background-color: white;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
 
@@ -177,14 +211,37 @@
 .portfolio__intro__lightbox4.close{
     display: none;
 }
+.portfolio__intro__lightbox4 .portfolio__content4{
+    width: 90%;
+    margin: 36px 5% 3%;  
+}
 
-
+@media (max-width: 767px) {
+    .close__button{
+        width: 80%;
+    }
+    .portfolio__intro__lightbox1{
+        width: 80%;
+        left: 10%;     
+    }
+    .portfolio__intro__lightbox2{
+        width: 80%;
+        left: 10%;     
+    }
+    .portfolio__intro__lightbox3{
+        width: 80%;
+        left: 10%;     
+    }
+    .portfolio__intro__lightbox4{
+        width: 80%;
+        left: 10%;     
+    }
+}
 
 
 .portfolio__content1{
     background: url('https://willy-personal.s3.amazonaws.com/personalBlog/bonnyBadmintonScreenshot.png');
     background-size: 100% 100%;
-
 }
 /* .portfolio__content1:hover{
     transform: scale(1.1);
