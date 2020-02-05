@@ -5,7 +5,8 @@
 @import './loading.css';
 
 *{
-    font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif;
+    font-family: Helvetica, Arial, sans-serif !important;
+    /* font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif; */
 }
 
 #firstScreen{
@@ -113,7 +114,10 @@ header{
     -moz-transform: translateY(-11.5px) translateX(0) rotate(-45deg);
 }
 
-
+.nav{
+    position: absolute;
+    right: 10px;
+}
 .nav a{
     color: white;
 }
@@ -160,11 +164,13 @@ aside a{
 .motto__content{
     top: 30vh;
     left: 10vw;
-    width: 75vw;
+    width: 78vw;
 }
 
 .motto__content__top{
     left: 5vw;
+    display: inline-block;
+    margin-bottom: 1.5rem;
 }
 .motto__content__bottom{
     left: 10vw;
@@ -222,7 +228,7 @@ aside a{
 }
 
 #contact h2{
-    font-family: "Titillium Web", "Adobe Blank";
+    /* font-family: "Titillium Web", "Adobe Blank"; */
     font-weight: 400;
     font-style: normal;
     font-size: 6rem;
