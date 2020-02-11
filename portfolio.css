@@ -240,7 +240,7 @@
 
 
 .portfolio__content1{
-    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/bonnyBadmintonScreenshot.png');
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/bonnyBadmintonScreenshot.webp');
     background-size: 100% 100%;
 }
 /* .portfolio__content1:hover{
@@ -272,7 +272,7 @@
 
 
 .portfolio__content2{
-    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/KKTIXextensionScreenshot.jpg');
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/KKTIXextensionScreenshot.webp');
     background-size: 100% 100%;
 }
 .portfolio__content2:hover::after{
@@ -319,7 +319,7 @@
     white-space: pre-line;
 }
 .portfolio__content4{
-    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/NLPTrainingScreenshot.jpg');
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/NLPTrainingScreenshot.webp');
     background-size: 100% 100%;
 }
 .portfolio__content4:hover::after{
