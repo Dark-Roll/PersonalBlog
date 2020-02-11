@@ -20,7 +20,7 @@ html, body { scroll-behavior:smooth; }
 }
 #firstScreen::after{
     content: "";
-    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/gray-paved-road-between-trees-3077379.jpg');
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/gray-paved-road-between-trees-3077379.webp');
     background-size: 100% 100%;
     opacity: .5;
 
