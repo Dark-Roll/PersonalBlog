@@ -19,7 +19,7 @@
     text-align: center;
 
     font-size: 4rem;
-    letter-spacing: .1em;
+    letter-spacing: 4px;
     margin: 48px 0 0 0;
 }
 @media (max-width: 480px) {
@@ -221,20 +221,36 @@
         width: 80%;
     }
     .portfolio__intro__lightbox1{
-        width: 80%;
-        left: 10%;     
+        position: fixed;
+        width: 100%;
+        /* Substract height of header */
+        height: calc(100% - 40px);   
+        top: 40px;
+        left: 0;
     }
     .portfolio__intro__lightbox2{
-        width: 80%;
-        left: 10%;     
+        position: fixed;
+        width: 100%;
+        /* Substract height of header */
+        height: calc(100% - 40px);   
+        top: 40px;
+        left: 0;
     }
     .portfolio__intro__lightbox3{
-        width: 80%;
-        left: 10%;     
+        position: fixed;
+        width: 100%;
+        /* Substract height of header */
+        height: calc(100% - 40px);   
+        top: 40px;
+        left: 0;
     }
     .portfolio__intro__lightbox4{
-        width: 80%;
-        left: 10%;     
+        position: fixed;
+        width: 100%;
+        /* Substract height of header */
+        height: calc(100% - 40px);   
+        top: 40px;
+        left: 0;
     }
 }
 

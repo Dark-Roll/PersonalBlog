@@ -20,6 +20,7 @@
 
 
     <title>Willy's website</title>
+    <link rel="icon" href="./assets/Moon.png" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" media="none" onload="if(media!='all')media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css" >
     <link rel="stylesheet" href="index.css" >
@@ -220,7 +221,7 @@
     </section>
 
     <section id="contact" class="contact">
-        <h2> Contact </h2>
+        <h2> CONTACT </h2>
         <div class="motto">
             <span class="contact__left">
                 「
@@ -257,6 +258,9 @@
     <script>
 
         window.onload = ()=>{
+            let body = document.getElementsByTagName('body')
+            body[0].style.position= 'relative'
+
             let loading = document.getElementsByClassName('loading')
             loading && loading[0].classList.add('close')
         }

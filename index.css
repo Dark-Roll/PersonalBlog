@@ -9,7 +9,15 @@
     /* font-family: "Helvetica", "Arial","LiHei Pro","黑體-繁","微軟正黑體", sans-serif; */
 }
 
-html, body { scroll-behavior:smooth; }
+html, body { 
+    scroll-behavior:smooth; 
+    /* for AOS */
+    overflow-x: hidden;
+}
+
+body{
+    position: fixed;
+}
 
 #firstScreen{
     
@@ -245,11 +253,12 @@ aside a{
         font-family: "Titillium Web", "Adobe Blank";
         font-weight: 400;
         font-style: normal;
-        font-size: 25vw;
+        font-size: 10vw;
         width: 100%;
         display: block;
         text-align: center;
         padding-top: 40px;
+        letter-spacing: 4px;
     }
 }
 
@@ -285,6 +294,7 @@ aside a{
     width: 100%;
     display: flex;
     justify-content: space-evenly;
+    padding-top: 20px;
 }
 
 .contact_content_inner span{
