@@ -116,12 +116,42 @@
             <!-- 簡單描述製作作品過 08/29 00:35
             → sojoasd: 程遇到什麼困難，且怎麼解決，這個感覺很重要，因為面試 08/29 00:35
             → sojoasd: 時比較會針對這些描述延伸做提問，你也比較有自信回答 -->
-            <div class="portfolio__content portfolio__content1 " data-aos="fade-right"
-                onclick="showLightBox('portfolio__intro__lightbox1')"
+
+            <div class="portfolio__content portfolio__content0" data-aos="fade-right"
+                onclick="showLightBox('portfolio__intro__lightbox0')"
             >
             </div>
 
             <!-- TODO: pop up animation -->
+            <div class="portfolio__intro__lightbox0 close">
+                <div class="close__button" onclick="closePortfolioLightBox('portfolio__intro__lightbox0')">x</div>
+                <a href="https://play.niceday.tw/" target="_new">
+                    <div class="portfolio__content portfolio__content0">
+                    </div>
+                </a>
+                <div class="device__button">
+                    <a href="https://play.niceday.tw/" target="_new">
+                        Website(SSR)
+                    </a>
+                </div>
+                
+                <span class="portfolio__intro">
+                    <p class="portfolio__intro__title">
+                        提供體驗的平台，幫助使用者發掘生活的美好 <br/>
+                    </p>
+                    使用技術：React、Next、Express、GraphQL、Material-UI、SCSS、styled-components、FB/Google Login<br/><br/>
+                    讓 SSR 不只是單純把 CSR 轉譯成 HTML，在前端的 web server 上實作更多功能，
+                    包含使用 GraphQL 以及使用 middleware 進行轉址以及身份的驗證
+                    <br/>
+                    <br/>
+                </span>
+            </div>
+
+            <div class="portfolio__content portfolio__content1" data-aos="fade-left"
+                onclick="showLightBox('portfolio__intro__lightbox1')"
+            >
+            </div>
+
             <div class="portfolio__intro__lightbox1 close">
                 <div class="close__button" onclick="closePortfolioLightBox('portfolio__intro__lightbox1')">x</div>
                 <a href="https://www.bonny-badminton.tw/" target="_new">
@@ -144,9 +174,9 @@
                 </div>
                 
                 <span class="portfolio__intro">
-                    <span class="portfolio__intro__title">
+                    <p class="portfolio__intro__title">
                         致力於推廣羽球知識、揪團臨打、球拍購買等服務的網站 <br/>
-                    </span>
+                    </p>
                     使用技術：React、Redux、SCSS、SSR、FB Login、Google Map API、React Native<br/><br/>
                     在開發 SSR 的過程中，由於是第一次接觸的技術，在前期不斷參考其他人的實作方式，卻在導入現有專案時遇上不少問題，像是搞混了 Server side 和 Client side 的 router，
                     後來在和主管討論的過程中，慢慢理解了 SSR 的流程，也成功的在現有專案上實作出來
@@ -155,7 +185,8 @@
                 </span>
             </div>
 
-            <div class="portfolio__content portfolio__content2" data-aos="fade-left"
+            <div class="portfolio__content portfolio__content2" data-aos="fade-right"
+                data-aos-offset="200"
                 onclick="showLightBox('portfolio__intro__lightbox2')"
             ></div>
 
@@ -172,9 +203,9 @@
                 </div>
                 
                 <span class="portfolio__intro">
-                    <span class="portfolio__intro__title">
+                    <p class="portfolio__intro__title">
                         加速票卷平台上購票的瀏覽器擴充功能 <br/>
-                    </span>
+                    </p>
                     使用技術：Javascript、擴充功能上架相關的知識 <br/><br/>
                     開發擴充功能的時候，想讓擴充功能與網頁間能夠互相通訊，因此找了 Chrome 官方的文件說明閱讀，雖說文件是出自官方，但文件就有不同種版本，加上不同版本提供的方法皆有各自的錯誤，
                     最後在使用 stackoverflow 的解答做修改才開發完成
@@ -192,7 +223,7 @@
             </span> -->
 
             <div class="portfolio__content portfolio__content4" 
-                data-aos="fade-up"
+                data-aos="fade-left"
                 data-aos-offset="200"
                 onclick="showLightBox('portfolio__intro__lightbox4')"
             ></div>
@@ -210,9 +241,9 @@
                 </div>
                 
                 <span class="portfolio__intro">
-                    <span class="portfolio__intro__title">
+                    <p class="portfolio__intro__title">
                         企業內部幫助 train bot 的網站 <br/>
-                    </span>
+                    </p>
                     使用技術：Vue、Vuex <br/><br/>
                     由於是與 Vue 的初相見，在一邊實作 pagination 功能的同時，一邊熟悉 Vue
                     <br/><br/>

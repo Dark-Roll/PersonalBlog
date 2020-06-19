@@ -121,10 +121,12 @@
 .portfolio__intro{
     display: inline-block;
     margin: 15px;
+    line-height: 18px;
 }
 
 .portfolio__intro__title{
     color: blueviolet;
+    margin-bottom: 6px;
 }
 
 /* according to No.1 maket share screen size (16:9) */
@@ -151,6 +153,30 @@
     }
 }
 
+.portfolio__intro__lightbox0{
+    width: 50%;
+    height: 80vh;
+
+    position: fixed ;
+    top: 10vh;
+    left: 25%; 
+    z-index: 99;
+    background-color: white;
+    overflow-y: auto;
+    overflow-x: hidden;
+    box-shadow: -1px 5px 35px -9px rgba(0,0,0,0.2);
+
+}
+.portfolio__intro__lightbox0.close{
+    display: none;
+}
+.portfolio__intro__lightbox0 .portfolio__content0{
+    width: 90%;
+    margin: 36px 5% 3%;  
+}
+.portfolio__intro__lightbox0 .device__button a{
+    width: 120px;
+}
 
 .portfolio__intro__lightbox2{
     width: 50%;
@@ -218,7 +244,15 @@
 
 @media (max-width: 767px) {
     .close__button{
-        width: 80%;
+        width: 100%;
+    }
+    .portfolio__intro__lightbox0{
+        position: fixed;
+        width: 100%;
+        /* Substract height of header */
+        height: calc(100% - 40px);   
+        top: 40px;
+        left: 0;
     }
     .portfolio__intro__lightbox1{
         position: fixed;
@@ -254,6 +288,29 @@
     }
 }
 
+.portfolio__content0{
+    background: url('https://willy-personal.s3.amazonaws.com/personalBlog/NicedayScreenshot.webp');
+    background-size: 100% 100%;
+}
+.portfolio__content0:hover::after{
+    content: "Next GraphQL \A 提供體驗的平台，幫助使用者發掘生活的美好";
+    display: block;
+    background: black;
+    color: white;
+    opacity: .8;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    border-width: 3px;
+    border-style: solid;
+
+    font-size: 2rem;
+    text-align: center;
+    white-space: pre-line;
+    line-height: 36px;
+}
 
 .portfolio__content1{
     background: url('https://willy-personal.s3.amazonaws.com/personalBlog/bonnyBadmintonScreenshot.webp');
@@ -265,11 +322,10 @@
 .portfolio__content1:hover::after{
     content: "React、Redux \A 致力於推廣羽球知識、揪團臨打等服務的網站";
     display: block;
-    position: absolute;
+    color: white;
     background: black;
     opacity: .8;
-
-
+    position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -277,10 +333,10 @@
     border-width: 3px;
     border-style: solid;
 
-    color: white;
     font-size: 2rem;
     text-align: center;
     white-space: pre-line;
+    line-height: 36px;
 
     /* transform: scale(1.1); */
 
@@ -294,21 +350,20 @@
 .portfolio__content2:hover::after{
     content: "Javascript \A 協助加快搶票的瀏覽器擴充功能";
     display: block;
-    position: absolute;
     background: black;
+    color: white;
     opacity: .8;
-
+    position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
     height: 100%;
     border-width: 3px;
     border-style: solid;
-
-    color: white;
     font-size: 2rem;
     text-align: center;
     white-space: pre-line;
+    line-height: 36px;
 }
 
 .portfolio__content3{
@@ -318,10 +373,10 @@
 .portfolio__content3::after{
     content: "React Redux \A 協助遠程團隊會議的網站";
     display: block;
-    position: absolute;
+    color: white;
     background: black;
     opacity: .8;
-
+    position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -329,10 +384,10 @@
     border-width: 3px;
     border-style: solid;
 
-    color: white;
     font-size: 2rem;
     text-align: center;
     white-space: pre-line;
+    line-height: 36px;
 }
 .portfolio__content4{
     background: url('https://willy-personal.s3.amazonaws.com/personalBlog/NLPTrainingScreenshot.webp');
@@ -341,10 +396,10 @@
 .portfolio__content4:hover::after{
     content: "Vue \A 企業內部幫助 train bot 的網站";
     display: block;
-    position: absolute;
+    color: white;
     background: black;
     opacity: .8;
-
+    position: absolute;
     top: 0%;
     left: 0%;
     width: 100%;
@@ -352,10 +407,10 @@
     border-width: 3px;
     border-style: solid;
 
-    color: white;
     font-size: 2rem;
     text-align: center;
     white-space: pre-line;
+    line-height: 36px;
 }
 
 .portfolio__right{
